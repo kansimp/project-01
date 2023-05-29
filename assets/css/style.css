@@ -1,0 +1,515 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins';
+}
+
+/* common */
+:root {
+    --primary-color: #0F1B4C;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 48px);
+}
+
+.btn {
+    min-width: 98px;
+    padding: 14.5px 16px;
+    background: var(--primary-color);
+    border-radius: 12px; 
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header */
+.header {
+    background-color: #E6F0FF;
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 50px;
+}
+
+.actions {
+    margin-left: auto;
+}
+
+.navbar ul a {
+    padding: 8px 14px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: #4F5361;
+}
+
+.navbar ul a:hover {
+    text-decoration: underline;
+}
+
+.navbar .action-link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.navbar .action-btn {
+    padding: 9.5px 16px;
+    margin-left: 18px;
+    border-radius: 8px;
+}
+
+.hero {
+    margin-top: 130px;
+}
+
+.hero .info {
+    width: 51%;
+}
+
+.hero .sub-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+
+.hero .title {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 119%;
+    color: #000336;
+}
+
+.hero .desc {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78; 
+    text-transform: capitalize; /*in hoa chu cai dau*/
+    color: #5A6473;
+}
+
+.hero .hero-cta {
+    margin-top: 40px;
+    min-width: 170px;
+}
+
+.hero-img {
+    position: absolute;
+    bottom: 0;
+    right: calc((100vw - 1110px) / 2 - 100px);
+}
+
+.client {
+    margin-top: 122px;
+}
+
+.client .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client .desc {
+    margin-top: 23px;
+}
+
+.client .desc p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #7D8589;
+}
+
+.client .images {
+    margin-top: 96px;
+
+}
+
+/* guides */
+
+.guides {
+    margin-top: 200px;
+}
+
+.guides .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+}
+
+.guides .sub-title::before {
+    content: ""; /*bat buoc co*/
+    left: 50%;
+    transform: translateX(-50%);
+    top: -10px;
+    display: inline-block;
+    position: absolute;
+    width: 41px;
+    height: 4px;  
+    background: #000339;
+    border-radius: 12px;  
+}
+
+.guides .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    text-align: center;
+    color: #5A6473;
+    width: 459px;
+    margin: 20px auto 0;
+    max-width: 100%;
+}
+
+.list-guide {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.guide-items {
+    margin: 0 70px;
+    text-align: center;
+}
+
+.guide-items .title {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #3B3C45;
+}
+
+.guide-items .link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #0689FF;
+}
+
+.guide-items .arrow {
+    margin-left: 6px;
+}
+
+.guides-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.guides-cta .btn {
+    min-width: 170px;
+}
+
+.feature {
+    margin-top: 120px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background: #F5FAFE;
+}
+
+.feature .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.feature .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.feature .link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 27px;
+    color: #0689FF;
+
+}
+
+.feature .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    display: flex;
+    align-items: flex-end;
+    color: #5A6473;
+}
+
+.feature .arrow {
+    margin-left: 8px;
+}
+
+.feature .list-items {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.feature .item {
+    background: #FFFFFF;
+    border-radius: 12px;
+    
+}
+
+.feature .body {
+    padding: 17px 20px 23px;
+}
+
+.feature .title {
+        
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.feature .desc {
+    margin-top: 11px;  
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #A3A6AB;
+}
+
+.feature .info {
+    margin-top: 21px;
+    
+}
+
+.feature .icon {
+    margin-right: 11px;
+}
+
+.feature .label {
+    margin-right: 23px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #4D4D52;
+}
+
+/* stats */
+
+.stats {
+    padding: 50px 0;
+    margin-top: 75px;
+}
+
+.stats .content {
+    width: 1048px;
+}
+
+.stats .row {
+    display: flex;
+   
+}
+
+.stats .block-img {
+    width: 50%;
+    position: relative;
+}
+
+.stats .sky {
+    border-radius: 12px;
+    width: 400px;
+    height: 460px; 
+    margin-left: auto;
+    display: block; 
+}
+
+.stats .info {
+    margin-left: 165px;
+    width: 309px;
+    height: 326px;
+    margin-top: 79px;
+}
+
+.stats .info .title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.29;
+    color: #000339;
+    position: relative;
+}
+/* mac dinh la the inline */
+.stats .info .title::before {  
+    content: ""; /*bat buoc co*/
+    width: 41px;
+    height: 4px;
+    background: #000339;
+    border-radius: 12px;  
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: -10px;
+}
+
+.stats .info .desc {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #5A6473;
+    margin-top: 20px;
+}
+
+.stats .user {
+    width: 239px;
+    height: 252px;
+    background: #FFFFFF;
+    box-shadow: 90px 85px 100px rgba(0, 0, 0, 0.06);
+    border-radius: 0px 0px 12px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.stats .user h4 {
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 1;
+    letter-spacing: 0.01em;
+    color: #000339;
+    width: 159px;
+    height: 26px;   
+}
+
+.stats .user img {
+    margin-left: 10px;
+}
+
+
+.stats .user .desc {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #A7A7A7;
+    margin-top: 8px;
+}
+
+.stats .user .desc::after {
+    content: "";
+    display: inline-block;
+    width: 193.62px;
+    height: 1.2px;
+    background: #E9E9E9;
+    margin-top: 26px;
+}
+
+.stats .row-stat {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    width: 985px;
+    margin-left: 32px;
+}
+
+.stats .num {
+    font-weight: 600;
+    font-size: 6.4rem;
+    line-height: 1;
+    color: #000000;
+}
+
+.stats .col .desc {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 27px;
+    color: #7B8087;
+    display: block;
+    margin-top: 22px;
+}
+
+.footer {
+    margin-top: 50px;
+    padding-bottom: 58px;
+}
+
+.footer .body {
+    margin-top: 105px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .col h4 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 24px;
+    color: #1C1C1D;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer .body .icon-logo {
+    margin-top: 40px;
+}
+
+.footer .col .desc {
+    display: block;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 24px;
+    color: #7A7A7E;
+    margin-top: 18px;
+}
+
+.footer .col .desc:nth-child(2)
+{
+    margin-top: 42px;
+}
+
+.footer .last {
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .last .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+    color: #C2C2C2;
+}
